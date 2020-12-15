@@ -13,10 +13,10 @@ public class IdentityRemovalTest extends IdentityPerfTest {
         StringBuilder sb = new StringBuilder();
         sb.append(String.format("%d\t", size));
 
-        removeInArray(targetIdentity, sb);
-        removeInLinkedList(targetIdentity, sb);
-        removeInBST(targetByName, sb);
-        removeInHashtable(targetByName, sb);
+        removeInArray(targetIdentity, sb);  // column 2
+        removeInLinkedList(targetIdentity, sb); // column 3
+        removeInBST(targetByName, sb); // column 4
+        removeInHashtable(targetByName, sb); // column 5
 
         System.out.println(sb);
     }
